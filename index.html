@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What It Is Quintet</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">What It Is Quintet</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#listen">Listen & Watch</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <!-- Instagram Banner/Call-to-Action -->
+  <div class="insta-banner" style="background: #C2B280; color: #181A1B; text-align: center; font-weight: bold; font-size: 1.2rem; padding: 1rem 0; letter-spacing: 1px;">
+    Follow us on Instagram for the latest updates, videos, and gig announcements!
+    <a href="https://www.instagram.com/what.it.is.jazz/" target="_blank" style="color: #181A1B; text-decoration: underline; margin-left: 0.5rem;">@what.it.is.jazz</a>
+  </div>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Your City’s Premier Jazz Experience</h1>
+        <p>Modern jazz, vintage soul. Book us for your next event.</p>
+        <a href="#booking" class="cta-btn">Book Us</a>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About the Band</h2>
+          <p>What It Is Quintet brings together five young jazz musicians, blending classic and contemporary sounds for an unforgettable experience. From intimate cafés to grand stages, our passion for jazz shines through every performance.</p>
+        </div>
+        <div class="about-photo">
+          <!-- Add a band portrait here -->
+          <img src="band-portrait.jpg" alt="What It Is Quintet Band Portrait">
+        </div>
+      </div>
+      <div class="about-gallery">
+        <!-- Add a horizontal gallery of vintage/rehearsal photos -->
+        <img src="gallery1.jpg" alt="Rehearsal 1">
+        <img src="gallery2.jpg" alt="Rehearsal 2">
+        <img src="gallery3.jpg" alt="Vintage Performance">
+      </div>
+      <!-- Large Instagram Button moved here -->
+      <div style="display: flex; justify-content: center; margin: 2rem 0;">
+        <a href="https://www.instagram.com/what.it.is.jazz/" target="_blank" style="display:inline-block; background:#C2B280; color:#181A1B; font-weight:bold; padding:1rem 2rem; border-radius:30px; font-size:1.2rem; text-decoration:none; box-shadow: 0 2px 8px rgba(0,0,0,0.10);">
+          <i class="fab fa-instagram" style="margin-right: 0.5rem;"></i>Follow us on Instagram
+        </a>
+      </div>
+    </section>
+    <section id="listen" class="listen-section" style="position: relative; overflow: hidden;">
+      <h2>Watch & Listen</h2>
+      <!-- Animated SVG Music Notes -->
+      <svg class="music-notes-bg" style="position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; z-index:0;" viewBox="0 0 800 400">
+        <g>
+          <animateTransform attributeName="transform" type="translate" from="0,400" to="0,-100" dur="8s" repeatCount="indefinite"/>
+          <text x="100" y="100" font-size="40" fill="#E0B85D" opacity="0.5">&#9835;</text>
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="translate" from="700,420" to="700,-80" dur="10s" repeatCount="indefinite"/>
+          <text x="700" y="120" font-size="32" fill="#4E7D7E" opacity="0.4">&#9833;</text>
+        </g>
+        <g>
+          <animateTransform attributeName="transform" type="translate" from="400,450" to="400,-50" dur="12s" repeatCount="indefinite"/>
+          <text x="400" y="150" font-size="50" fill="#D9644A" opacity="0.3">&#119070;</text>
+        </g>
+      </svg>
+      <div class="tab-content" id="videos" style="position: relative; z-index: 1;">
+        <!-- Embed YouTube video(s) here -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        <div class="testimonial" style="margin-top: 2rem; color: var(--gold); font-size: 1.2rem; text-align: center; font-style: italic;">
+          “What It Is Quintet brought an incredible vibe to our event! Their talent and energy had everyone talking. We can’t wait to have them back!”<br>
+          <span style="font-size: 1rem; color: var(--cream); font-style: normal;">— Local Event Organizer</span>
+        </div>
+      </div>
+    </section>
+    <section id="booking" class="booking-section">
+      <h2>Book the Band</h2>
+      <p>Tell us about your event and we’ll get back to you soon!</p>
+      <form id="booking-form" action="https://formspree.io/f/xkgzjwvn" method="POST">
+        <label for="client-name">Name</label>
+        <input type="text" id="client-name" name="client-name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+        <label for="event-date">Event Date & Time</label>
+        <input type="datetime-local" id="event-date" name="event-date" required>
+        <label for="venue">Venue Address</label>
+        <textarea id="venue" name="venue" required></textarea>
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes"></textarea>
+        <button type="submit">Send Booking Request</button>
+        <div id="form-message" class="thank-you-message" style="display:none; color: var(--gold); font-size: 1.2rem; margin-top: 1rem;">Thank you so much for reaching out! We truly appreciate your interest and will get back to you as soon as possible. Your support means the world to us!</div>
+      </form>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact & Socials</h2>
+      <form id="contact-form" action="https://formspree.io/f/xkgzjwvn" method="POST">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="contact-email" required>
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="contact-message" required></textarea>
+        <button type="submit">Send Message</button>
+        <div id="contact-form-message" class="thank-you-message" style="display:none; color: var(--gold); font-size: 1.2rem; margin-top: 1rem;">Thank you for your message! We appreciate your interest and will be in touch soon. Your support means so much to us!</div>
+      </form>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/what.it.is.jazz/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="contact-cta" style="margin: 2rem 0; color: var(--gold); font-size: 1.1rem; font-weight: bold; text-align: center;">
+        For updates, booking, or questions, reach out via our contact form!
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>&copy; 2024 What It Is Quintet. All rights reserved.</span>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#listen">Listen & Watch</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/1f1e993743.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    // AJAX for Booking Form
+    const bookingForm = document.getElementById('booking-form');
+    const bookingThankYou = document.getElementById('form-message');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        bookingThankYou.style.display = 'none';
+        const formData = new FormData(bookingForm);
+        try {
+          const response = await fetch(bookingForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            bookingForm.reset();
+            bookingThankYou.style.display = 'block';
+            bookingThankYou.textContent = 'Thank you so much for reaching out! We truly appreciate your interest and will get back to you as soon as possible. Your support means the world to us!';
+          } else {
+            bookingThankYou.style.display = 'block';
+            bookingThankYou.textContent = 'Sorry, there was a problem submitting your request. Please try again or contact us directly.';
+          }
+        } catch (error) {
+          bookingThankYou.style.display = 'block';
+          bookingThankYou.textContent = 'Sorry, there was a problem submitting your request. Please try again or contact us directly.';
+        }
+      });
+    }
+    // AJAX for Contact Form
+    const contactForm = document.getElementById('contact-form');
+    const contactThankYou = document.getElementById('contact-form-message');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        contactThankYou.style.display = 'none';
+        const formData = new FormData(contactForm);
+        try {
+          const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            contactForm.reset();
+            contactThankYou.style.display = 'block';
+            contactThankYou.textContent = 'Thank you for your message! We appreciate your interest and will be in touch soon. Your support means so much to us!';
+          } else {
+            contactThankYou.style.display = 'block';
+            contactThankYou.textContent = 'Sorry, there was a problem submitting your message. Please try again or contact us directly.';
+          }
+        } catch (error) {
+          contactThankYou.style.display = 'block';
+          contactThankYou.textContent = 'Sorry, there was a problem submitting your message. Please try again or contact us directly.';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
