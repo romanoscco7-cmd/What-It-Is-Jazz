@@ -23,7 +23,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#listen">Listen & Watch</a></li>
-        <li><a href="#booking">Booking</a></li>
+        <li><a href="#booking-form-start">Booking</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Open navigation menu">
@@ -41,63 +41,153 @@
       <div class="hero-content">
         <h1>Your City’s Premier Jazz Experience</h1>
         <p>Modern jazz, vintage soul. Book us for your next event.</p>
-        <a href="#booking" class="cta-btn">Book Us</a>
+        <a href="#booking-form-start" class="cta-btn">Book Us</a>
       </div>
     </section>
     <section id="about" class="about-section">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>About the Band</h2>
-          <p>What It Is Quintet brings together five young jazz musicians, blending classic and contemporary sounds for an unforgettable experience. From intimate cafés to grand stages, our passion for jazz shines through every performance.</p>
+      <div class="content-container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About the Band</h2>
+            <p>What It Is Quintet brings together five young jazz musicians, blending classic and contemporary sounds for an unforgettable experience. From intimate cafés to grand stages, our passion for jazz shines through every performance.</p>
+            <p>We specialize in creating memorable moments through our unique interpretation of jazz standards and original compositions, bringing fresh energy to every venue we grace.</p>
+          </div>
+          <div class="about-photo">
+            <img src="band-portrait.jpg" alt="What It Is Quintet Band Portrait">
+          </div>
         </div>
-        <div class="about-photo">
-          <!-- Add a band portrait here -->
-          <img src="band-portrait.jpg" alt="What It Is Quintet Band Portrait">
+        <div class="about-gallery">
+          <img src="gallery1.JPG" alt="Rehearsal 1">
+          <img src="gallery2.JPG" alt="Rehearsal 2">
+          <img src="gallery3.JPG" alt="Performance">
         </div>
-      </div>
-      <div class="about-gallery">
-        <!-- Add a horizontal gallery of vintage/rehearsal photos -->
-        <img src="gallery1.JPG" alt="Rehearsal 1">
-        <img src="gallery2.JPG" alt="Rehearsal 2">
-        <img src="gallery3.JPG" alt="Vintage Performance">
-      </div>
-      <!-- Large Instagram Button moved here -->
-      <div style="display: flex; justify-content: center; margin: 2rem 0;">
-        <a href="https://www.instagram.com/what.it.is.jazz/" target="_blank" style="display:inline-block; background:#C2B280; color:#181A1B; font-weight:bold; padding:1rem 2rem; border-radius:30px; font-size:1.2rem; text-decoration:none; box-shadow: 0 2px 8px rgba(0,0,0,0.10);">
-          <i class="fab fa-instagram" style="margin-right: 0.5rem;"></i>Follow us on Instagram
-        </a>
-      </div>
-    </section>
-    <section id="listen" class="listen-section" style="position: relative; overflow: hidden;">
-      <h2>Watch & Listen</h2>
-      <!-- Animated SVG Music Notes -->
-      <svg class="music-notes-bg" style="position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none; z-index:0;" viewBox="0 0 800 400">
-        <g>
-          <animateTransform attributeName="transform" type="translate" from="0,400" to="0,-100" dur="8s" repeatCount="indefinite"/>
-          <text x="100" y="100" font-size="40" fill="#E0B85D" opacity="0.5">&#9835;</text>
-        </g>
-        <g>
-          <animateTransform attributeName="transform" type="translate" from="700,420" to="700,-80" dur="10s" repeatCount="indefinite"/>
-          <text x="700" y="120" font-size="32" fill="#4E7D7E" opacity="0.4">&#9833;</text>
-        </g>
-        <g>
-          <animateTransform attributeName="transform" type="translate" from="400,450" to="400,-50" dur="12s" repeatCount="indefinite"/>
-          <text x="400" y="150" font-size="50" fill="#D9644A" opacity="0.3">&#119070;</text>
-        </g>
-      </svg>
-      <div class="tab-content" id="videos" style="position: relative; z-index: 1;">
-        <!-- Embed YouTube video(s) here -->
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
-        <div class="testimonial" style="margin-top: 2rem; color: var(--gold); font-size: 1.2rem; text-align: center; font-style: italic;">
-          “What It Is Quintet brought an incredible vibe to our event! Their talent and energy had everyone talking. We can’t wait to have them back!”<br>
-          <span style="font-size: 1rem; color: var(--cream); font-style: normal;">— Local Event Organizer</span>
+        <div class="about-social">
+          <a href="https://instagram.com/what.it.is.jazz" target="_blank" rel="noopener" class="instagram-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Instagram
+          </a>
         </div>
       </div>
     </section>
+    
+    <div class="section-divider"></div>
+    <section class="members-section">
+      <div class="content-container">
+        <h3>Band Members</h3>
+        <div class="members-grid">
+          <article class="member-card">
+            <img src="roman.png" alt="Portrait of Roman Oscco" loading="lazy">
+            <div class="member-meta">
+              <h4>Roman Oscco</h4>
+              <p class="instrument">Tenor Saxophone</p>
+              <p class="tagline">Warm tone, modern lines, and deep bossa nova sensibility.</p>
+            </div>
+            <div class="member-details">
+              <div class="bio-toggle">Read bio & more</div>
+              <p class="bio">Roman has been playing music his whole life and puts hard work and practice into what he does. He's a jokester at times and is always making his friends giggle. </p>
+              <p class="influences"><strong>Influences:</strong> Joe Henderson, Stan Getz, John Coltrane</p>
+              <p class="fun-fact"><strong>Fun fact:</strong> Can play music on every instrument family.</p>
+              <div class="social-links">
+                <a href="https://instagram.com/roman.oscco" target="_blank" rel="noopener">Instagram</a>
+              </div>
+            </div>
+          </article>
+          <article class="member-card">
+            <img src="band-portrait.jpg" alt="Portrait of William Kwon" loading="lazy">
+            <div class="member-meta">
+              <h4>William Kwon</h4>
+              <p class="instrument">Piano</p>
+              <p class="tagline">Jazz piano with firm classical inluence.</p>
+            </div>
+            <div class="member-details">
+              <div class="bio-toggle">Read bio & more</div>
+              <p class="bio">William has a learned classical background and is mainly a classical pianist. That is firmly reflected in the way he plays jazz music.</p>
+              <p class="influences"><strong>Influences:</strong> Herbie Hancock, Brad Mehldau, Shai Maestro</p>
+              <p class="fun-fact"><strong>Fun fact:</strong> Arranges video game themes for jazz trio.</p>
+              <div class="social-links">
+                <a href="https://instagram.com/wk6.24" target="_blank" rel="noopener">Instagram</a>
+              </div>
+            </div>
+          </article>
+          <article class="member-card">
+            <img src="kiran.jpg" alt="Portrait of Kiran Dudukgian" loading="lazy">
+            <div class="member-meta">
+              <h4>Kiran Dudukgian</h4>
+              <p class="instrument">Electric Bass</p>
+              <p class="tagline">Big sound, crispy deep basslines, and intensive solos.</p>
+            </div>
+            <div class="member-details">
+              <div class="bio-toggle">Read bio & more</div>
+              <p class="bio">Kiran lays down deep resounding bass line which contrast the high pitched greatness of the saxophones. Working together with Ale they combine to form the best bass drumm duo the world has ever seen.</p>
+              <p class="influences"><strong>Influences:</strong> Jaco Pastorius, LeBron James, Geddy Lee, James Jamerson</p>
+              <p class="fun-fact"><strong>Fun fact:</strong> Used to play the trumpet.</p>
+              <div class="social-links">
+                <a href="https://instagram.com/kirandudukgian" target="_blank" rel="noopener">Instagram</a>
+              </div>
+            </div>
+          </article>
+          <article class="member-card">
+            <img src="ale.jpg" alt="Portrait of Alessandro Lasaine" loading="lazy">
+            <div class="member-meta">
+              <h4>Alessandro Lasaine</h4>
+              <p class="instrument">Drums</p>
+              <p class="tagline">Dynamic, responsive, and groove-driven with crisp articulation.</p>
+            </div>
+            <div class="member-details">
+              <div class="bio-toggle">Read bio & more</div>
+              <p class="bio">Alessandro is a dynamic jazz drummer with roots in marching percussion, he blends technique with a deeply creative sense of groove and improvisation.</p>
+              <p class="influences"><strong>Influences:</strong> Tony Williams, Elvin Jones, Roy Haynes</p>
+              <p class="fun-fact"><strong>Fun fact:</strong> Comes from a family of well known jazz musicians.</p>
+              <div class="social-links">
+                <a href="https://instagram.com/alelasaine" target="_blank" rel="noopener">Instagram</a>
+              </div>
+            </div>
+          </article>
+          <article class="member-card">
+            <img src="nathan.jpg" alt="Portrait of Nathan Schneider" loading="lazy">
+            <div class="member-meta">
+              <h4>Nathan Schneider</h4>
+              <p class="instrument">Alto Saxophone</p>
+              <p class="tagline">Clear tone, straight ahead lyrical phrasing, and fearless upper register.</p>
+            </div>
+            <div class="member-details">
+              <div class="bio-toggle">Read bio & more</div>
+              <p class="bio">Nathan blends rich saxophone tones with his great personality. From bebop phrases to melodic lines Nathan is sure to wow the audience and leave them wanting more.</p>
+              <p class="influences"><strong>Influences:</strong> Jackie McLean, Justin Robinson, Sonny Stitt</p>
+              <p class="fun-fact"><strong>Fun fact:</strong> Enjoys composing music and collecting vintage mouth pieces.</p>
+              <div class="social-links">
+                <a href="https://instagram.com/nschneidmusic" target="_blank" rel="noopener">Instagram</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    <section id="listen" class="listen-section">
+      <div class="content-container">
+        <h2>Watch & Listen</h2>
+        <div class="tab-content" id="videos">
+          <!-- Embed YouTube video(s) here -->
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+          <div class="testimonial">
+            "What It Is Quintet brought an incredible vibe to our event! Their talent and energy had everyone talking. We can't wait to have them back!"<br>
+            <span>— Local Event Organizer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="section-divider"></div>
     <section id="booking" class="booking-section">
-      <h2>Book the Band</h2>
-      <p>Tell us about your event and we’ll get back to you soon!</p>
-      <form id="booking-form" action="https://formspree.io/f/xkgzjwvn" method="POST">
+      <div class="content-container">
+        <span id="booking-form-start"></span>
+        <h2>Book the Band</h2>
+        <p>Tell us about your event and we'll get back to you soon!</p>
+        <form id="booking-form" action="https://formspree.io/f/xkgzjwvn" method="POST">
         <label for="client-name">Name</label>
         <input type="text" id="client-name" name="client-name" required>
         <label for="email">Email</label>
@@ -112,11 +202,15 @@
         <textarea id="notes" name="notes"></textarea>
         <button type="submit">Send Booking Request</button>
         <div id="form-message" class="thank-you-message" style="display:none; color: var(--gold); font-size: 1.2rem; margin-top: 1rem;">Thank you so much for reaching out! We truly appreciate your interest and will get back to you as soon as possible. Your support means the world to us!</div>
-      </form>
+        </form>
+      </div>
     </section>
+    
+    <div class="section-divider"></div>
     <section id="contact" class="contact-section">
-      <h2>Contact & Socials</h2>
-      <form id="contact-form" action="https://formspree.io/f/xkgzjwvn" method="POST">
+      <div class="content-container">
+        <h2>Contact & Socials</h2>
+        <form id="contact-form" action="https://formspree.io/f/xkgzjwvn" method="POST">
         <label for="contact-name">Name</label>
         <input type="text" id="contact-name" name="contact-name" required>
         <label for="contact-email">Email</label>
@@ -130,8 +224,9 @@
         <a href="https://www.instagram.com/what.it.is.jazz/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
-      <div class="contact-cta" style="margin: 2rem 0; color: var(--gold); font-size: 1.1rem; font-weight: bold; text-align: center;">
-        For updates, booking, or questions, reach out via our contact form!
+        <div class="contact-cta">
+          For updates, booking, or questions, reach out via our contact form!
+        </div>
       </div>
     </section>
   </main>
@@ -142,7 +237,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#listen">Listen & Watch</a>
-        <a href="#booking">Booking</a>
+        <a href="#booking-form-start">Booking</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -209,4 +304,3 @@
   </script>
 </body>
 </html>
-
